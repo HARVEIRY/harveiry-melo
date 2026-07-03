@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harveiry Melo - Tarjeta Digital Jurídica</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Alpine.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+    <!-- Font Awesome Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script id="card-config">
+        window.cardConfig = {
+          "title": "Harveiry Melo - Tarjeta Digital Jurídica",
+          "mainTitle": "HARVEIRY MELO MACHADO",
+          "subtitle": "ABOGADO",
+          "description": "Derecho Laboral • Pensiones",
+          "sedesTitle": "Sedes Cúcuta Norte de Santander",
+          "sedesList": "toda Colombia",
+          "primaryFont": "Montserrat",
+          "titleFont": "Cinzel",
+          "themeColor": "amber",
+          "avatarUrl": "https://i.postimg.cc/13Hn89Hp/FONDO.jpg",
+          "bannerUrl": "https://i.postimg.cc/MZD5Dd79/logo-fondo.jpg",
+          "bgUrl": "https://i.postimg.cc/MZD5Dd79/logo-fondo.jpg",
+          "statusType": "active",
+          "statusLabel": "Asesor en Línea",
+          "statusIcon": "fa-scale-balanced",
+          "phone": "+573157033611",
+          "whatsapp": "573157033611",
+          "whatsappMsg": "Hola Harveiry Melo, necesito asesoría sobre un caso laboral / pensiones.",
+          "email": "juharveiry@gmail.com",
+          "emailSubject": "Solicitud de Consulta Jurídica",
+          "mapUrl": "https://www.google.com/maps/place/Av.+3+%26+Cl.+11,+C%C3%BAcuta,+Norte+de+Santander/@7.8862612,-72.5041785,17z/",
+          "facebook": "https://www.facebook.com/harveiry.melo",
+          "instagram": "https://www.instagram.com/harveiry/",
+          "bookingBtnText": "AGENDAR CITA JURÍDICA",
+          "hoursMonFri": "8:00 AM - 6:00 PM",
+          "hoursSat": "9:00 AM - 1:00 PM",
+          "hoursEmergency": "Línea SOS 24h",
+          "hoursWarning": "* Las audiencias virtuales y notificaciones judiciales se gestionan de manera ininterrumpida.",
+          "vCard": {
+                    "org": "Harveiry Melo machado",
+                    "title": "Abogados Especialistas en Derecho Laboral y Pensiones",
+                    "city": "Cucuta",
+                    "state": "Norte de Santander",
+                    "country": "Colombia"
+          },
+          "services": [
+                    {
+                              "title": "PENSIÓN DE VEJEZ",
+                              "icon": "fa-user-clock",
+                              "description": "• Pensión anticipada por discapacidad (PCL 25%).\n• Reconocimiento de pensión por semanas faltantes, errores en historia laboral o mora del empleador.\n• Pensión por actividades de alto riesgo.\n• Pensión especial para madres o padres con hijos en condición de discapacidad.\n• Pensión familiar."
+                    },
+                    {
+                              "title": "PENSIÓN DE INVALIDEZ",
+                              "icon": "fa-user-injured",
+                              "description": "• Reconocimiento de pensión por enfermedades congénitas, degenerativas o progresivas.\n• Reclamaciones por incumplimiento de semanas cotizadas.\n• Impugnación de dictámenes de pérdida de capacidad laboral (PCL)."
+                    },
+                    {
+                              "title": "PENSIÓN DE SOBREVIVIENTE",
+                              "icon": "fa-hands-holding",
+                              "description": "• Reclamación de pensiones negadas por Colpensiones o fondos privados.\n• Reconocimiento de derechos pensionales de familiares fallecidos.\n• Trámites ante Fuerzas Militares y Policía Nacional."
+                    },
+                    {
+                              "title": "INDEMNIZACIÓN SUSTITUTIVA Y DEVOLUCIÓN DE APORTES",
+                              "icon": "fa-hand-holding-dollar",
+                              "description": "• Recuperación de aportes de trabajadores fallecidos o cuando no alcance a reunir las semanas para pensionarse."
+                    },
+                    {
+                              "title": "AUXILIO FUNERARIO",
+                              "icon": "fa-monument",
+                              "description": "• Reclamación del auxilio funerario ante fondos de pensiones."
+                    },
+                    {
+                              "title": "RELIQUIDACIÓN PENSIONAL",
+                              "icon": "fa-calculator",
+                              "description": "• Incremento y reajuste de mesadas pensionales.\n• Reliquidaciones para docentes, trabajadores oficiales y regímenes especiales."
+                    },
+                    {
+                              "title": "TRASLADO ENTRE FONDOS DE PENSIONES",
+                              "icon": "fa-right-left",
+                              "description": "• Demandas por falta de información al trasladarse de Colpensiones a fondos privados.\n• Indemnización de perjuicios por asesoría inadecuada."
+                    },
+                    {
+                              "title": "PENSIÓN NOTARIOS",
+                              "icon": "fa-signature",
+                              "description": "• Reconocimiento simultáneo de pensión y salario para notarios y curadores."
+                    },
+                    {
+                              "title": "DERECHO LABORAL",
+                              "icon": "fa-briefcase",
+                              "description": "• Contrato realidad y reconocimiento de prestaciones sociales.\n• Despido sin justa causa.\n• Fuero de estabilidad laboral reforzada (maternidad, discapacidad y prepensionados).\n• Acoso laboral.\n• Accidentes de trabajo y reclamación de indemnizaciones."
+                    },
+                    {
+                              "title": "DERECHO DE FAMILIA Y SUCESIONES",
+                              "icon": "fa-people-roof",
+                              "description": "• Divorcios y liquidación de sociedad conyugal.\n• Procesos de sucesión.\n• Reclamación de derechos hereditarios."
+                    },
+                    {
+                              "title": "DERECHO CIVIL Y BIENES",
+                              "icon": "fa-house-chimney-window",
+                              "description": "• Procesos divisorios y partición de bienes.\n• Conflictos entre copropietarios.\n• Asesoría y representación en asuntos patrimoniales."
+                    }
+          ]
+        };
+    </script>
+
+    <style>
+        body { transition: background-color 0.3s ease; }
+        .interactive-element { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .interactive-element:hover {
+            transform: translateY(-4px) scale(1.02);
+            box-shadow: 0 4px 15px rgba(var(--theme-rgb), 0.15);
+        }
+        @keyframes techOrbit { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+        @keyframes techRingReverse { 0% { transform: rotate(0deg); } 100% { transform: rotate(-360deg); } }
+        .animate-tech-orbit { animation: techOrbit 15s linear infinite; }
+        .animate-tech-ring-reverse { animation: techRingReverse 8s linear infinite; }
+        .custom-scrollbar::-webkit-scrollbar { width: 6px; height: 6px; }
+        .custom-scrollbar::-webkit-scrollbar-track { background: rgba(241, 245, 249, 0.8); border-radius: 9999px; }
+        .custom-scrollbar::-webkit-scrollbar-thumb { background: rgba(var(--theme-rgb), 0.35); border-radius: 9999px; }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover { background: rgba(var(--theme-rgb), 0.7); }
+    </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Montserrat:wght@400;500;600;700&display=swap">
+</head>
+<body x-data="cardApp" class="bg-slate-100 text-slate-800 min-h-screen flex items-center justify-center p-4 relative overflow-x-hidden custom-scrollbar">
+
+    <!-- Imagen de fondo translúcida -->
+    <div class="absolute inset-0 bg-cover bg-center -z-20 opacity-15" :style="'background-image: url(' + config.bgUrl + ')'"></div>
+    <div class="absolute inset-0 bg-white/80 backdrop-blur-[6px] -z-20"></div>
+
+    <!-- Aura de Neón Trasera Translúcida -->
+    <div class="absolute w-[500px] h-[500px] rounded-full filter blur-[130px] -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 pointer-events-none" :style="'background-color: rgba(' + themeRgb + ', 0.1)'"></div>
+
+    <!-- Contenedor Principal de la Tarjeta Móvil Centrada -->
+    <div class="w-full md:max-w-sm md:h-[850px] bg-white/95 rounded-[2.5rem] animated-neon-border overflow-hidden flex flex-col relative shadow-[0_20px_50px_rgba(15,23,42,0.1)]">
+        
+        <!-- Línea de escáner láser decorativa -->
+        <div class="absolute inset-x-0 scanner-line z-20 pointer-events-none"></div>
+
+        <!-- Contenido con Scroll vertical -->
+        <div class="flex-1 overflow-y-auto custom-scrollbar flex flex-col pb-6 pt-2">
+
+            <!-- Banner Superior -->
+            <div class="h-32 relative flex-shrink-0">
+                <img :src="config.bannerUrl" alt="Firma de Abogados" class="w-full h-full object-cover">
+                <div class="absolute inset-0 bg-gradient-to-b from-slate-900/10 via-white/80 to-white"></div>
+            </div>
+
+            <!-- Identidad Jurídica (Avatar) -->
+            <div class="flex flex-col items-center -mt-16 px-6 relative z-10 flex-shrink-0">
+                <div class="relative w-32 h-32 flex items-center justify-center">
+                    <div class="absolute inset-0 rounded-full border border-dashed animate-tech-orbit" :style="'border-color: rgba(' + themeRgb + ', 0.5)'"></div>
+                    <div class="absolute inset-1.5 rounded-full border-2 border-dotted animate-tech-ring-reverse" :style="'border-color: rgba(' + themeRgb + ', 0.7)'"></div>
+                    
+                    <div class="w-24 h-24 rounded-full overflow-hidden bg-white p-1 border border-slate-200 relative z-10">
+                        <img :src="config.avatarUrl" alt="Abogado" class="w-full h-full object-cover rounded-full" onerror="this.src='https://api.dicebear.com/7.x/initials/svg?seed=HM'">
+                    </div>
+                    
+                    <div class="absolute bottom-2 right-2 w-7 h-7 border border-white rounded-full flex items-center justify-center shadow-lg animate-pulse z-20" :class="statusBgClass">
+                        <i class="fas text-white text-xs" :class="config.statusIcon"></i>
+                    </div>
+                </div>
+
+                <!-- Identidad de Marca -->
+                <div class="text-center mt-3">
+                    <h1 x-text="config.mainTitle" class="font-title text-xl font-extrabold tracking-wider bg-gradient-to-r from-slate-950 via-slate-800 to-slate-700 bg-clip-text text-transparent"></h1>
+                    <span x-text="config.subtitle" class="text-xs font-sans font-bold tracking-[0.25em] block mt-1 text-theme-primary"></span>
+                    <p x-text="config.description" class="text-slate-600 text-sm mt-2 font-semibold"></p>
+                </div>
+
+                <!-- Cobertura Territorial -->
+                <div class="w-full mt-4 bg-slate-50 border border-slate-200/80 rounded-xl p-3 text-center shadow-sm">
+                    <p class="text-xs font-semibold uppercase tracking-wider mb-1 text-theme-primary" x-text="config.sedesTitle"></p>
+                    <p class="text-xs text-slate-700 font-medium" x-text="config.sedesList"></p>
+                </div>
+            </div>
+
+            <!-- Rejilla de Canales de Interacción -->
+            <div class="grid grid-cols-3 gap-3 px-6 mt-6 flex-shrink-0">
+                <a :href="'tel:' + config.phone" class="interactive-element bg-gradient-to-br from-slate-50 to-slate-100 border border-slate-200 rounded-xl p-3 flex flex-col items-center justify-center text-center shadow-sm">
+                    <i class="fas fa-phone text-theme-primary text-lg mb-1.5"></i>
+                    <span class="text-[11px] font-bold tracking-wider text-slate-700">CONSULTA</span>
+                </a>
+
+                <button @click="showHours = true" class="interactive-element bg-white border border-slate-200 rounded-xl p-3 flex flex-col items-center justify-center text-center shadow-sm">
+                    <i class="fas fa-clock text-theme-primary text-lg mb-1.5"></i>
+                    <span class="text-[11px] font-bold tracking-wider text-slate-700">HORARIO</span>
+                </button>
+
+                <button @click="showServices = true" class="interactive-element bg-white border border-slate-200 rounded-xl p-3 flex flex-col items-center justify-center text-center shadow-sm">
+                    <i class="fas fa-gavel text-theme-primary text-lg mb-1.5"></i>
+                    <span class="text-[11px] font-bold tracking-wider text-slate-700">ÁREAS</span>
+                </button>
+
+                <a :href="config.facebook" target="_blank" class="interactive-element bg-white border border-slate-200 rounded-xl p-3 flex flex-col items-center justify-center text-center shadow-sm">
+                    <i class="fab fa-facebook text-blue-600 text-lg mb-1.5"></i>
+                    <span class="text-[11px] font-bold tracking-wider text-slate-700">FACEBOOK</span>
+                </a>
+
+                <a :href="'https://wa.me/' + config.whatsapp + '?text=' + encodeURIComponent(config.whatsappMsg)" target="_blank" class="interactive-element bg-emerald-50 border border-emerald-200 rounded-xl p-3 flex flex-col items-center justify-center text-center shadow-sm">
+                    <i class="fab fa-whatsapp text-emerald-600 text-xl mb-1"></i>
+                    <span class="text-[11px] font-bold tracking-wider text-emerald-700">WHATSAPP</span>
+                </a>
+
+                <a :href="config.instagram" target="_blank" class="interactive-element bg-white border border-slate-200 rounded-xl p-3 flex flex-col items-center justify-center text-center shadow-sm">
+                    <i class="fab fa-instagram text-pink-600 text-lg mb-1.5"></i>
+                    <span class="text-[11px] font-bold tracking-wider text-slate-700">INSTAGRAM</span>
+                </a>
+
+                <a :href="'mailto:' + config.email + '?subject=' + encodeURIComponent(config.emailSubject)" class="interactive-element bg-white border border-slate-200 rounded-xl p-3 flex flex-col items-center justify-center text-center shadow-sm">
+                    <i class="fas fa-envelope text-theme-primary text-lg mb-1.5"></i>
+                    <span class="text-[11px] font-bold tracking-wider text-slate-700">CORREO</span>
+                </a>
+
+                <a :href="config.mapUrl" target="_blank" class="interactive-element bg-white border border-slate-200 rounded-xl p-3 flex flex-col items-center justify-center text-center shadow-sm">
+                    <i class="fas fa-compass text-theme-primary text-lg mb-1.5"></i>
+                    <span class="text-[11px] font-bold tracking-wider text-slate-700">DESPACHO</span>
+                </a>
+
+                <button @click="showPwa = true" class="interactive-element bg-white border border-slate-200 rounded-xl p-3 flex flex-col items-center justify-center text-center shadow-sm">
+                    <i class="fas fa-mobile-alt text-theme-primary text-lg mb-1.5"></i>
+                    <span class="text-[11px] font-bold tracking-wider text-slate-700">INSTALAR</span>
+                </button>
+            </div>
+
+            <!-- Botones de Acción de Pie -->
+            <div class="mt-6 px-6 space-y-3 flex-shrink-0">
+                <button @click="showBooking = true" class="w-full interactive-element bg-theme-primary text-white rounded-xl py-4 font-bold tracking-wider text-sm flex items-center justify-center gap-2 shadow-lg hover:brightness-110">
+                    <i class="fas fa-calendar-check text-white animate-bounce"></i>
+                    <span class="font-title" x-text="config.bookingBtnText"></span>
+                </button>
+
+                <div class="grid grid-cols-2 gap-3">
+                    <button @click="downloadVCard()" class="interactive-element bg-slate-50 border border-slate-200 rounded-xl py-3 text-xs font-bold flex items-center justify-center gap-2 text-slate-700 shadow-sm">
+                        <i class="fas fa-user-plus text-theme-primary"></i>
+                        <span>GUARDAR CONTACTO</span>
+                    </button>
+                    <button @click="showQr = true" class="interactive-element bg-slate-50 border border-slate-200 rounded-xl py-3 text-xs font-bold flex items-center justify-center gap-2 text-slate-700 shadow-sm">
+                        <i class="fas fa-qrcode text-theme-primary"></i>
+                        <span>COMPARTIR QR</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="text-center mt-6 text-[10px] text-slate-400 tracking-[0.2em] uppercase flex-shrink-0 flex items-center justify-center gap-1.5">
+                <i class="fas fa-shield-halved text-theme-primary opacity-50"></i>
+                <span>Lex Laboral Secure Client Card</span>
+            </div>
+        </div>
+
+        <!-- ================= MODALS INTERACTIVOS DE LA TARJETA ================= -->
+
+        <!-- Modal: Código QR -->
+        <div x-show="showQr" x-transition.opacity class="absolute inset-0 bg-slate-900/40 backdrop-blur-sm z-50 flex items-center justify-center p-6" style="display: none;">
+            <div @click.outside="showQr = false" class="bg-white border border-slate-200 rounded-3xl p-6 w-full max-w-[320px] text-center shadow-2xl relative">
+                <button @click="showQr = false" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600">
+                    <i class="fas fa-times text-lg"></i>
+                </button>
+                <h3 class="font-title font-bold text-slate-800 mb-4 tracking-wider">COMPARTIR TARJETA</h3>
+                <div class="bg-white p-4 rounded-2xl inline-block shadow-md border border-slate-100 mx-auto">
+                    <img :src="getQrUrl()" alt="Código QR" class="w-48 h-48">
+                </div>
+                <p class="text-slate-600 text-xs mt-4 font-semibold">Escanea para abrir nuestro despacho digital directo en tu celular.</p>
+            </div>
+        </div>
+
+        <!-- Modal: Especialidades Jurídicas -->
+        <div x-show="showServices" x-transition.opacity class="absolute inset-0 bg-slate-900/40 backdrop-blur-sm z-50 flex items-center justify-center p-6" style="display: none;">
+            <div @click.outside="showServices = false" class="bg-white border border-slate-200 rounded-3xl p-6 w-full max-w-[340px] flex flex-col h-[520px] shadow-2xl relative">
+                <button @click="showServices = false" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600 z-10">
+                    <i class="fas fa-times text-lg"></i>
+                </button>
+                <h3 class="font-title font-bold text-slate-800 mb-4 tracking-wider text-center">NUESTRAS ÁREAS</h3>
+                
+                <div class="flex-1 overflow-y-auto space-y-3 pr-1 custom-scrollbar">
+                    <template x-for="service in config.services">
+                        <div class="bg-slate-50 border border-slate-200/80 p-3 rounded-xl flex gap-3 shadow-sm">
+                            <div class="text-theme-primary text-xl"><i class="fas" :class="service.icon"></i></div>
+                            <div>
+                                <h4 class="text-xs font-bold font-title text-slate-800" x-text="service.title"></h4>
+                                <p class="text-[11px] text-slate-600 mt-1 font-semibold whitespace-pre-line" x-text="service.description"></p>
+                            </div>
+                        </div>
+                    </template>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal: Horario -->
+        <div x-show="showHours" x-transition.opacity class="absolute inset-0 bg-slate-900/40 backdrop-blur-sm z-50 flex items-center justify-center p-6" style="display: none;">
+            <div @click.outside="showHours = false" class="bg-white border border-slate-200 rounded-3xl p-6 w-full max-w-[320px] text-center shadow-2xl relative">
+                <button @click="showHours = false" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600">
+                    <i class="fas fa-times text-lg"></i>
+                </button>
+                <h3 class="font-title font-bold text-slate-800 mb-5 tracking-wider">HORARIOS DE ATENCIÓN</h3>
+                
+                <div class="space-y-3 text-left text-slate-700">
+                    <div class="flex justify-between items-center border-b border-slate-100 pb-2">
+                        <span class="text-xs font-bold text-slate-800">Lunes a Viernes</span>
+                        <span class="text-xs text-theme-primary font-bold" x-text="config.hoursMonFri"></span>
+                    </div>
+                    <div class="flex justify-between items-center border-b border-slate-100 pb-2">
+                        <span class="text-xs font-bold text-slate-800">Sábados</span>
+                        <span class="text-xs text-theme-primary font-bold" x-text="config.hoursSat"></span>
+                    </div>
+                    <div class="flex justify-between items-center pb-1">
+                        <span class="text-xs font-bold text-slate-800">Urgencias</span>
+                        <span class="text-xs text-theme-primary font-bold" x-text="config.hoursEmergency"></span>
+                    </div>
+                </div>
+                <div class="mt-5 text-[11px] text-slate-600 italic bg-slate-50 p-3 rounded-xl border border-slate-200" x-text="config.hoursWarning"></div>
+            </div>
+        </div>
+
+        <!-- Modal: Instalación PWA -->
+        <div x-show="showPwa" x-transition.opacity class="absolute inset-0 bg-slate-900/40 backdrop-blur-sm z-50 flex items-center justify-center p-6" style="display: none;">
+            <div @click.outside="showPwa = false" class="bg-white border border-slate-200 rounded-3xl p-6 w-full max-w-[320px] shadow-2xl relative flex flex-col">
+                <button @click="showPwa = false" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600">
+                    <i class="fas fa-times text-lg"></i>
+                </button>
+                <h3 class="font-title font-bold text-slate-800 mb-4 tracking-wider text-center">CONFIGURAR APP</h3>
+                
+                <div class="flex border-b border-slate-100 mb-4">
+                    <button @click="pwaTab = 'ios'" :class="pwaTab === 'ios' ? 'border-b-2 border-theme-primary text-slate-800' : 'text-slate-400'" class="flex-1 py-2 text-xs font-bold tracking-wider transition">
+                        <i class="fab fa-apple mr-1"></i> APPLE
+                    </button>
+                    <button @click="pwaTab = 'android'" :class="pwaTab === 'android' ? 'border-b-2 border-theme-primary text-slate-800' : 'text-slate-400'" class="flex-1 py-2 text-xs font-bold tracking-wider transition">
+                        <i class="fab fa-android mr-1"></i> ANDROID
+                    </button>
+                </div>
+
+                <div x-show="pwaTab === 'ios'" class="space-y-4 text-slate-600 text-xs font-semibold">
+                    <div class="flex gap-3"><div class="bg-slate-50 p-2 rounded-lg text-theme-primary border border-slate-100"><i class="fas fa-compass"></i></div><p>1. Abre el navegador de <strong>Safari</strong> en tu iPhone.</p></div>
+                    <div class="flex gap-3"><div class="bg-slate-50 p-2 rounded-lg text-theme-primary border border-slate-100"><i class="fas fa-share-square"></i></div><p>2. Presiona el botón de <strong>Compartir</strong> en la barra inferior.</p></div>
+                    <div class="flex gap-3"><div class="bg-slate-50 p-2 rounded-lg text-theme-primary border border-slate-100"><i class="fas fa-plus-square"></i></div><p>3. Elige la opción de <strong>"Agregar al inicio"</strong>.</p></div>
+                </div>
+
+                <div x-show="pwaTab === 'android'" class="space-y-4 text-slate-600 text-xs font-semibold" style="display: none;">
+                    <div class="flex gap-3"><div class="bg-slate-50 p-2 rounded-lg text-theme-primary border border-slate-100"><i class="fab fa-chrome"></i></div><p>1. Asegúrate de estar usando <strong>Google Chrome</strong>.</p></div>
+                    <div class="flex gap-3"><div class="bg-slate-50 p-2 rounded-lg text-theme-primary border border-slate-100"><i class="fas fa-ellipsis-v"></i></div><p>2. Presiona el icono de los <strong>tres puntos</strong> arriba a la derecha.</p></div>
+                    <div class="flex gap-3"><div class="bg-slate-50 p-2 rounded-lg text-theme-primary border border-slate-100"><i class="fas fa-download"></i></div><p>3. Pulsa sobre <strong>"Instalar aplicación"</strong>.</p></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Flow del Calendario de Agendamiento -->
+        <div x-show="showBooking" x-transition.opacity class="absolute inset-0 bg-slate-900/40 backdrop-blur-sm z-50 flex items-center justify-center p-6" style="display: none;">
+            <div @click.outside="showBooking = false" class="bg-white border border-slate-200 rounded-3xl p-6 w-full max-w-[340px] shadow-2xl relative flex flex-col h-[520px]">
+                
+                <button @click="showBooking = false" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600">
+                    <i class="fas fa-times text-lg"></i>
+                </button>
+
+                <div class="text-center mb-4">
+                    <h3 class="font-title font-bold text-slate-800 tracking-wider">RESERVAR ASESORÍA</h3>
+                    <div class="flex justify-center items-center gap-2 mt-2">
+                        <span :class="bookingStep >= 1 ? 'bg-theme-primary' : 'bg-slate-200'" class="h-1.5 w-10 rounded-full transition-colors"></span>
+                        <span :class="bookingStep >= 2 ? 'bg-theme-primary' : 'bg-slate-200'" class="h-1.5 w-10 rounded-full transition-colors"></span>
+                        <span :class="bookingStep >= 3 ? 'bg-theme-primary' : 'bg-slate-200'" class="h-1.5 w-10 rounded-full transition-colors"></span>
+                    </div>
+                </div>
+
+                <!-- PASO 1: Calendario -->
+                <div x-show="bookingStep === 1" class="flex-1 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-center mb-4 px-2 text-slate-700">
+                            <button @click="prevMonth()" class="text-slate-400 hover:text-slate-800"><i class="fas fa-chevron-left"></i></button>
+                            <span class="font-bold text-slate-800 font-mono" x-text="monthNames[currentMonth] + ' ' + currentYear"></span>
+                            <button @click="nextMonth()" class="text-slate-400 hover:text-slate-800"><i class="fas fa-chevron-right"></i></button>
+                        </div>
+                        
+                        <div class="grid grid-cols-7 text-center text-xs font-bold text-slate-400 mb-2 font-mono">
+                            <span>DO</span><span>LU</span><span>MA</span><span>MI</span><span>JU</span><span>VI</span><span>SA</span>
+                        </div>
+
+                        <div class="grid grid-cols-7 gap-1 text-center text-sm">
+                            <template x-for="dayObj in daysInMonth">
+                                <div>
+                                    <template x-if="dayObj.day === null">
+                                        <span class="block py-1.5 text-transparent">0</span>
+                                    </template>
+                                    <template x-if="dayObj.day !== null">
+                                        <button @click="selectDay(dayObj)" :disabled="dayObj.disabled" :class="{
+                                                'text-slate-300 cursor-not-allowed bg-transparent': dayObj.disabled,
+                                                'text-slate-800 hover:bg-slate-100 hover:border-slate-300': !dayObj.disabled,
+                                                'bg-theme-light border border-theme-primary text-slate-900 font-bold': selectedDate === dayObj.dateString
+                                            }" class="w-full py-1.5 rounded-lg border border-transparent transition text-center text-xs font-semibold">
+                                            <span x-text="dayObj.day"></span>
+                                        </button>
+                                    </template>
+                                </div>
+                            </template>
+                        </div>
+                    </div>
+                    <div class="text-[11px] text-slate-500 text-center mt-3 font-semibold">* Domingos y festivos no habilitados.</div>
+                </div>
+
+                <!-- PASO 2: Horarios -->
+                <div x-show="bookingStep === 2" class="flex-1 flex flex-col justify-between" style="display: none;">
+                    <div>
+                        <p class="text-xs text-slate-600 mb-3 text-center font-semibold">
+                            Fecha Seleccionada: <span class="text-theme-primary font-bold" x-text="formatSelectedDate()"></span>
+                        </p>
+                        <div class="grid grid-cols-2 gap-2 overflow-y-auto max-h-[250px] pr-1 custom-scrollbar">
+                            <template x-for="slot in timeSlots">
+                                <button @click="selectTime(slot)" class="py-2.5 px-3 bg-slate-50 border border-slate-200 rounded-xl text-xs hover:border-theme-primary hover:bg-slate-100 transition text-center text-slate-700 font-bold shadow-sm">
+                                    <span x-text="slot"></span>
+                                </button>
+                            </template>
+                        </div>
+                    </div>
+                    <button @click="bookingStep = 1" class="w-full mt-4 py-2 border border-slate-200 text-slate-500 text-xs rounded-xl">
+                        <i class="fas fa-arrow-left mr-1"></i> Cambiar Fecha
+                    </button>
+                </div>
+
+                <!-- PASO 3: Formulario -->
+                <div x-show="bookingStep === 3" class="flex-1 flex flex-col justify-between" style="display: none;">
+                    <form @submit.prevent="submitBooking()" class="space-y-3 flex-1 overflow-y-auto pr-1 custom-scrollbar">
+                        <div class="text-[11px] text-slate-600 text-center bg-slate-50 p-2 rounded-xl border border-slate-200 font-semibold">
+                            Fijada: <span class="text-theme-primary font-bold" x-text="formatSelectedDate()"></span> a las <span class="text-theme-primary font-bold" x-text="selectedTime"></span>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-[10px] uppercase tracking-wider text-slate-400 font-bold mb-1">Nombre Completo</label>
+                            <input required x-model="form.name" type="text" class="w-full bg-slate-50 border border-slate-200 rounded-lg px-3 py-1.5 text-xs text-slate-800">
+                        </div>
+                        <div>
+                            <label class="block text-[10px] uppercase tracking-wider text-slate-400 font-bold mb-1">Celular de Contacto</label>
+                            <input required x-model="form.phone" type="tel" class="w-full bg-slate-50 border border-slate-200 rounded-lg px-3 py-1.5 text-xs text-slate-800">
+                        </div>
+                        <div>
+                            <label class="block text-[10px] uppercase tracking-wider text-slate-400 font-bold mb-1">Asunto de Asesoría</label>
+                            <select required x-model="form.subject" class="w-full bg-slate-50 border border-slate-200 rounded-lg px-3 py-1.5 text-xs text-slate-800">
+                                <option value="" disabled selected>Seleccione Especialidad</option>
+                                <option value="Pensión de Vejez">Pensión de Vejez</option>
+                                <option value="Pensión de Invalidez">Pensión de Invalidez</option>
+                                <option value="Sobrevivientes">Pensión de Sobreviviente</option>
+                                <option value="Derecho Laboral">Derecho Laboral General</option>
+                                <option value="Civil y Familia">Derecho Civil y Familia</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-[10px] uppercase tracking-wider text-slate-400 font-bold mb-1">Descripción del Caso</label>
+                            <textarea required x-model="form.description" rows="2" class="w-full bg-slate-50 border border-slate-200 rounded-lg px-3 py-1.5 text-xs text-slate-800" placeholder="Detalles relevantes..."></textarea>
+                        </div>
+
+                        <div class="pt-2 flex gap-2">
+                            <button type="button" @click="bookingStep = 2" class="flex-1 py-3 border border-slate-200 text-slate-500 text-xs rounded-xl">Atrás</button>
+                            <button type="submit" :disabled="isSubmitting" class="flex-[2] bg-theme-primary text-white font-bold text-xs rounded-xl py-3 tracking-wider flex items-center justify-center gap-2">
+                                <span x-show="!isSubmitting">AGENDAR CITA</span>
+                                <span x-show="isSubmitting">REGISTRANDO...</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- NOTIFICACIÓN TOAST INFORMATIVA GLOBAL -->
+    <div x-show="showToast" x-transition class="fixed bottom-6 right-6 bg-slate-900 border-2 border-emerald-500 rounded-2xl p-4 shadow-2xl z-[150] flex items-start gap-3 max-w-sm" style="display: none;">
+        <div class="bg-emerald-500/10 text-emerald-400 p-2 rounded-xl flex items-center border border-emerald-500/20">
+            <i class="fas fa-circle-check text-lg"></i>
+        </div>
+        <div>
+            <h4 class="text-xs font-bold text-emerald-400 uppercase tracking-wider font-mono">Sistema</h4>
+            <p class="text-[11px] text-slate-300 mt-1 font-semibold" x-text="toastMessage"></p>
+        </div>
+    </div>
+
+    <!-- LÓGICA DE INTERACTIVIDAD -->
+    <script>
+        document.addEventListener('alpine:init', () => {
+            const colorThemes = {
+                amber: { primary: '#d97706', hover: '#b45309', light: '#fef3c7', text: '#78350f', rgb: '217, 119, 6' }
+            };
+
+            Alpine.data('cardApp', () => ({
+                config: window.cardConfig,
+                showServices: false,
+                showHours: false,
+                showPwa: false,
+                showQr: false,
+                pwaTab: 'ios',
+                showBooking: false,
+                bookingStep: 1, 
+                selectedDate: null, 
+                selectedTime: null,
+                form: { name: '', phone: '', subject: '', description: '' },
+                isSubmitting: false,
+                showToast: false,
+                toastMessage: '',
+                currentYear: new Date().getFullYear(),
+                currentMonth: new Date().getMonth(), 
+                daysInMonth: [],
+                monthNames: ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"],
+                timeSlots: ["08:00 AM - 09:00 AM", "09:30 AM - 10:30 AM", "10:30 AM - 11:30 AM", "11:30 AM - 12:30 PM", "02:00 PM - 03:00 PM", "03:30 PM - 04:30 PM", "04:30 PM - 05:30 PM"],
+
+                init() {
+                    this.generateCalendar();
+                },
+                get themeStyles() {
+                    const colors = colorThemes[this.config.themeColor] || colorThemes.amber;
+                    return `
+                        :root {
+                            --theme-primary: ${colors.primary};
+                            --theme-primary-hover: ${colors.hover};
+                            --theme-primary-light: ${colors.light};
+                            --theme-primary-text: ${colors.text};
+                            --theme-rgb: ${colors.rgb};
+                        }
+                        body { font-family: '${this.config.primaryFont}', sans-serif !important; }
+                        .font-title, h1, h2, h3, h4 { font-family: '${this.config.titleFont}', serif !important; }
+                        .text-theme-primary { color: var(--theme-primary) !important; }
+                        .bg-theme-primary { background-color: var(--theme-primary) !important; }
+                        .bg-theme-light { background-color: var(--theme-primary-light) !important; }
+                        .border-theme-primary { border-color: var(--theme-primary) !important; }
+                        @keyframes neonPulseCustom {
+                            0%, 100% { box-shadow: 0 0 12px rgba(var(--theme-rgb), 0.25); border-color: rgba(var(--theme-rgb), 0.45); }
+                            50% { box-shadow: 0 0 22px rgba(var(--theme-rgb), 0.5); border-color: rgba(var(--theme-rgb), 0.85); }
+                        }
+                        .animated-neon-border { border: 2px solid rgba(var(--theme-rgb), 0.45); animation: neonPulseCustom 3.5s infinite ease-in-out; }
+                        @keyframes consoleScanCustom { 0% { top: 0%; opacity: 0; } 5% { opacity: 0.4; } 100% { top: 100%; opacity: 0; } }
+                        .scanner-line { height: 3px; background: linear-gradient(90deg, transparent, rgba(var(--theme-rgb), 0.6), transparent); animation: consoleScanCustom 6s linear infinite; }
+                    `;
+                },
+                get themeRgb() { return colorThemes[this.config.themeColor].rgb; },
+                get statusBgClass() { return 'bg-emerald-600 border-emerald-400'; },
+
+                generateCalendar() {
+                    const firstDayIndex = new Date(this.currentYear, this.currentMonth, 1).getDay(); 
+                    const totalDays = new Date(this.currentYear, this.currentMonth + 1, 0).getDate();
+                    let days = [];
+                    for (let i = 0; i < firstDayIndex; i++) days.push({ day: null, disabled: true });
+                    const today = new Date(); today.setHours(0,0,0,0);
+
+                    for (let d = 1; d <= totalDays; d++) {
+                        const checkDate = new Date(this.currentYear, this.currentMonth, d);
+                        days.push({
+                            day: d,
+                            dateString: `${this.currentYear}-${String(this.currentMonth + 1).padStart(2, '0')}-${String(d).padStart(2, '0')}`,
+                            disabled: checkDate < today || checkDate.getDay() === 0
+                        });
+                    }
+                    this.daysInMonth = days;
+                },
+                prevMonth() { if (this.currentMonth > new Date().getMonth() || this.currentYear > new Date().getFullYear()) { if (this.currentMonth === 0) { this.currentMonth = 11; this.currentYear--; } else this.currentMonth--; this.generateCalendar(); } },
+                nextMonth() { if (this.currentMonth === 11) { this.currentMonth = 0; this.currentYear++; } else this.currentMonth++; this.generateCalendar(); },
+                selectDay(dayObj) { if (!dayObj.disabled && dayObj.day) { this.selectedDate = dayObj.dateString; this.bookingStep = 2; } },
+                selectTime(slot) { this.selectedTime = slot; this.bookingStep = 3; },
+                formatSelectedDate() { if (!this.selectedDate) return ''; const parts = this.selectedDate.split('-'); return `${parts[2]} de ${this.monthNames[parseInt(parts[1]) - 1]} del ${parts[0]}`; },
+                
+                async submitBooking() {
+                    this.isSubmitting = true;
+                    await new Promise(resolve => setTimeout(resolve, 1500));
+                    this.showBooking = false;
+                    this.bookingStep = 1;
+                    this.form = { name: '', phone: '', subject: '', description: '' };
+                    this.triggerToast("Cita agendada con éxito. Nos comunicaremos con usted.");
+                    this.isSubmitting = false;
+                },
+                triggerToast(msg) { this.toastMessage = msg; this.showToast = true; setTimeout(() => this.showToast = false, 4000); },
+                getQrUrl() { return `https://api.qrserver.com/v1/create-qr-code/?size=250x250&color=0f172a&data=${encodeURIComponent(window.location.href)}`; },
+                
+                downloadVCard() {
+                    const vCardContent = ["BEGIN:VCARD", "VERSION:3.0", `FN:${this.config.mainTitle}`, `ORG:${this.config.vCard.org}`, `TITLE:${this.config.vCard.title}`, `TEL;TYPE=WORK,VOICE:${this.config.phone}`, `EMAIL;TYPE=PREF,INTERNET:${this.config.email}`, `ADR;TYPE=WORK:;;Sede Principal;${this.config.vCard.city};${this.config.vCard.state};${this.config.vCard.country}`, "END:VCARD"].join("\n");
+                    const blob = new Blob([vCardContent], { type: "text/vcard;charset=utf-8;" });
+                    const link = document.createElement("a"); link.href = URL.createObjectURL(blob);
+                    link.setAttribute("download", "Contacto_Harveiry_Melo.vcf");
+                    document.body.appendChild(link); link.click(); document.body.removeChild(link);
+                    this.triggerToast("Ficha de contacto descargada.");
+                }
+            }));
+        });
+    </script>
+
+    <!-- Inyector de estilos en tiempo real -->
+    <div x-html="'<style>' + themeStyles + '</style>'"></div>
+</body>
+</html>
